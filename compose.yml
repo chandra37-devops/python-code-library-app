@@ -1,7 +1,7 @@
 ---
 services:
   db:
-    image: chandra123devops/pyapp:db-image
+    image: chandra123devops/pyapp:database-image
     deploy:
       replicas: 1
     ports:
