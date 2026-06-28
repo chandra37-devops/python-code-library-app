@@ -10,7 +10,7 @@ services:
       - mynetwork
 
   auth_service:
-    image: chandra123devops:auth-image
+    image: chandra123devops/pyapp:auth-image
     deploy:
       replicas: 1
     ports:
@@ -32,7 +32,7 @@ services:
     depends_on:
       - db
   borrow_service:
-    image: chandra123devops:borrow-image
+    image: chandra123devops/pyapp:borrow-image
     deploy:
       replicas: 1
     ports:
@@ -43,7 +43,7 @@ services:
       - db
 
   frontend:
-    image: chandra123devops:frontend-image
+    image: chandra123devops/pyapp:frontend-image
     deploy:
       replicas: 1
     ports:
